@@ -31,11 +31,10 @@ setInterval(updateCountdown, 1000);
 const doors = document.querySelectorAll('.door');
 doors.forEach((door, index) => {
   door.addEventListener('click', () => {
-    // 현재 한국 시간을 얻어오기
     const now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Edmonton" }));
 
     // 각 날짜에 해당하는 날짜를 계산
-    const openDate = new Date(2023, 11, index + 1); // 2023년 12월 1일부터 시작
+    const openDate = new Date(2024, 11, index + 1); // 2023년 12월 1일부터 시작
 
     // 현재 날짜가 열 수 있는 날짜 이후인지 확인
     if (now.getTime() > openDate.getTime()) {

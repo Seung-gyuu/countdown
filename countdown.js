@@ -1,5 +1,5 @@
 // 목표 날짜 설정 (예시: 2023년 1월 1일)
-const targetDate = new Date("2023-12-25T00:00:00Z");
+const targetDate = new Date("2024-12-25T00:00:00Z");
 
 function updateCountdown() {
   // 현재 한국 시간을 얻어오기
@@ -34,7 +34,7 @@ doors.forEach((door, index) => {
     const now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Edmonton" }));
 
     // 각 날짜에 해당하는 날짜를 계산
-    const openDate = new Date(2024, 11, index + 1); // 2023년 12월 1일부터 시작
+    const openDate = new Date(2024, 11, index + 1); // 2024년 12월 1일부터 시작
 
     // 현재 날짜가 열 수 있는 날짜 이후인지 확인
     if (now.getTime() > openDate.getTime()) {
